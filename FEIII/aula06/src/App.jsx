@@ -75,11 +75,14 @@ const cities = [
 import Card from "./components/Card"
 
 function App() {
-  return(
-  <div className="container">
-    <h1>Cidades Brasileiras</h1>
-    <Card id="1"/>
-  </div>
+  return (
+    <div className="container">
+      <h1>Cidades Brasileiras</h1>
+      <ul>
+        {cities.map((item) => (
+          <Card key={item.id} item={item} />))}
+      </ul>
+    </div>
   )
 }
 

@@ -1,4 +1,5 @@
 .borda {
     border: 1px solid black;
     width: 70;
+    padding: 15px;
 }
